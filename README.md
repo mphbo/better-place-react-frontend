@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+!["Screenshot of URLs page"](https://github.com/msarauer/better-place/blob/master/docs/better-place.png?raw=true)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Description
 
-## Available Scripts
+This project was created and presented as our teams' final project for Lighthouse Lab's Web Development Course in July 2021. The application allows users to seek out 
+volunteers to help them with everyday tasks, as well as find others who may need help. The aim is to help make the world a Better Place.
 
-In the project directory, you can run:
+## Features
 
-### `yarn start`
+The following features have been implemented in our application as of July 17, 2021:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Login and create a profile
+- Post your opportunity for others to volunteer
+- Volunteer for someone else's opportunity
+- Display all nearby needs in a list
+- Display all nearby needs on a map
+- Filter by: Category, Time Commitment, Distance, and Search word
+- Sort by distance, time commitment, and user rating
+- Leave a review and rating for a user
+- Chat with other users
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Tech Stack
 
-### `yarn test`
+- Front End: React
+- Component Libraries: Material UI, Ant Design
+- Back End: Express, Node, Socket.io
+- Database: PostgreSQL
+- CSS Preprocessor: Sass
+- APIs: Google Maps JavaScript API, Google Geocoding API
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Screenshots
 
-### `yarn build`
+### Profile/Login comes out from the side of the application, with a smooth transition.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+!["Screenshot of URLs page"](https://github.com/msarauer/better-place/blob/master/docs/profile.png?raw=true)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Dynamic list of volunteer opportunities that can be filtered and sorted by location, time commitment, distance, category and search term.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+!["Screenshot of register page"](https://github.com/msarauer/better-place/blob/master/docs/list.png?raw=true)
 
-### `yarn eject`
+### Switch to a map visual of all the data in the opportunity list with all the same filtering and sorting capabilities.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+!["Screenshot of register page"](https://github.com/msarauer/better-place/blob/master/docs/map.png?raw=true)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Create a new opportunity with a title, description, address, category, and time commitment that volunteers can then sign up for.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+!["Screenshot of register page"](https://github.com/msarauer/better-place/blob/master/docs/new.png?raw=true)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Setup
 
-## Learn More
+Install dependencies with 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```sh
+yarn
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Start Server
 
-### Code Splitting
+From the server directory
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```sh
+yarn run go
+```
 
-### Analyzing the Bundle Size
+## Start Client
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+From the client directory
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```sh
+yarn run start
+```
